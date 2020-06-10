@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "my-pokemon"
+    }
+  },
+  "defaultProject": "my-pokemon",
+  "cli": {
+    "analytics": "184633d0-30e4-44c1-ab9a-a2064124fa27"
+  }
 }

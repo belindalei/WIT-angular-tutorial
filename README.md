@@ -1,6 +1,8 @@
 # MyPokemon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+Hands on Angular tutorial for Citi's Women in Tech Summer 2020 Program.
+
+Tutorial slides can be found [here](https://docs.google.com/presentation/d/1Z6TZR6Wtbd2oiBhR_g4AByLTkXXvZnbsyOh5HEA1Hhk/edit?usp=sharing). 
 
 ## Development server
 
