@@ -1,6 +1,10 @@
 # MyPokemon
 
-Hands on Angular tutorial for Citi's Women in Tech Summer 2020 Program.
+![Pikachu](https://media.giphy.com/media/slVWEctHZKvWU/source.gif)
+
+Hands on Angular tutorial using a third party Pokemon API for Citi's Women in Tech Summer 2020 Program.
+
+This is part two of an Angular 101 Workshop. Part 1 slides can be founder [here](https://docs.google.com/presentation/d/1c3TQHXPnScEC6uW5X2yYpYXhSOnHD2VreRkECT4LCgw/edit?usp=sharing)
 
 Tutorial slides can be found [here](https://docs.google.com/presentation/d/1Z6TZR6Wtbd2oiBhR_g4AByLTkXXvZnbsyOh5HEA1Hhk/edit?usp=sharing). 
 

@@ -1,0 +1,28 @@
+<h1>Welcome!</h1>
+
+<div class="play-container">
+  <!-- The (click) is an event binding that binds to the countClick method. It's saying "Call the method when the element is clicked" -->
+  <!-- clickCounter is a property that is defined by the component itself in the .ts file  -->
+  <p>You've clicked <span (click)="countClick()">this </span>{{ clickCounter }} times</p>
+</div> 
+
+<div class="play-container">
+  <!-- two=way data binding is used, which means the input property is going to send and receive information to the component logic in the .ts file-->
+  <input type="text" [(ngModel)]="name">
+  <br>
+  <!-- the name property is used to demonstrate two way data binding is working -->
+  <strong>Pikachu said: </strong> {{name}}
+</div>
+
+<div class="play-container">
+<!-- ng-template is a custom element from Angular 8 that allows you to use structural directives like ngIf. NOTE: *ngIf is used when a structural directive needs to be implied (like in a div tag)-->
+  <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
+      <p>The pika counter <strong>IS GREATER</strong> than 4.</p>
+  </ng-template>
+
+  <!-- The #none is in reference to the "none" above -->
+  <ng-template #none>
+      <p>The pika counter is <strong>LESS</strong> than 4.</p>
+  </ng-template>
+</div>
+

@@ -1,17 +1,17 @@
-<header>
-  <div class=”container”>
-    <a href=”#” class=”logo”>Pokemon!</a>
-  </div>
-  <nav>
-    <ul>
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Pokemon <3 WIT </h1>
+    <span class="menu-spacer"></span>
+    <div>
       <!-- The way you link between different components and pages of Angular app is with routerLink  -->
-      <li><a href="#" routerLink="/">Home</a></li>
-      <li><a href="#" routerLink="/">Pokemon</a></li>
-    </ul>
-  </nav>
-</header>
+      <a mat-button routerLink="/">Home</a>
+      <a mat-button routerLink="/list">Pokemon</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
 <div class="container">
-  <!-- router-outlet is a custom HTML element where the routed components are displayed -->
+  <!-- router-outlet is a custom HTML element where the routed components are dis -->
   <router-outlet></router-outlet>
 </div>
