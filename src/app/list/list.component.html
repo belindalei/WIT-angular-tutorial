@@ -1,1 +1,21 @@
-<p>list works!</p>
+<h1>Pokemon</h1>
+
+<!-- *ngIf says that it will only show the ul if the pokemon exists -->
+<!-- <ul *ngIf="pokemon"> -->
+  <!-- *ngFor lets you iterate through the array of objects -->
+  <!-- <li *ngFor="let poke of pokemon">
+    <p class="name">{{poke.name}}</p>
+    <img [src]="poke.image" style="background: #F2F2F2;">
+  </li>
+
+</ul> -->
+
+<!-- using Angular Material grid-list to style -->
+<div *ngIf="pokemon">
+  <mat-grid-list cols="2" rowHeight="3:1" >
+    <mat-grid-tile *ngFor="let poke of pokemon">
+      {{poke.name}}
+      <img [src]="poke.image">
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

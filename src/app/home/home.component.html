@@ -14,7 +14,17 @@
   <strong>Pikachu said: </strong> {{name}}
 </div>
 
-<div class="play-container">
+<!-- added style binding. The right side of the dot is the css property name -->
+<!-- <div class="play-container" [style.background-color]="clickCounter > 4 ? 'yellow' : 'lightgray' " > -->
+
+<!-- ngStyle allows you to change multiple css simultaneously -->
+<!-- <div class="play-container" [ngStyle]="{
+'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
+'border' : clickCounter > 4 ? '4px solid black' : 'none'
+}" > -->
+
+<!-- class-binding -->
+<div class="play-container" [class.active]="clickCounter > 4" >
 <!-- ng-template is a custom element from Angular 8 that allows you to use structural directives like ngIf. NOTE: *ngIf is used when a structural directive needs to be implied (like in a div tag)-->
   <ng-template [ngIf]="clickCounter > 4" [ngIfElse]="none">
       <p>The pika counter <strong>IS GREATER</strong> than 4.</p>

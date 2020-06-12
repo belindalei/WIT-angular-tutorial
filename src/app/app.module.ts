@@ -9,6 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './home/home.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule } from '@angular/forms'; 
+import { HttpClientModule } from '@angular/common/http';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, ListComponent],
@@ -18,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
